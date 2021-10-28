@@ -29,6 +29,6 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: pytest
         env:
-	  SEEKRIT: ${{ secrets.seekrit }}
+	  SEEKRIT: 1234
         run: |
           pytest wallet
