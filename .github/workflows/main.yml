@@ -28,7 +28,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: pytest
        	uses: google-github-actions/get-secretmanager-secrets@main
-        with:
-          credentials: ${{ secrets.gcp_credentials }}
+#        with:
+#          credentials: ${{ secrets.gcp_credentials }}
         run: |
           pytest
