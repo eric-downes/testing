@@ -1,4 +1,4 @@
 import os
 
 def test_env():
-	assert 'A' == os.getenv('A')
+	assert '1234' == os.getenv('SEEKRIT')
